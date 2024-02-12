@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <input hx-post="" type="text">
+    <button hx-get="http://localhost:5000/ai" hx-target="#data">
+      Load fresh data
+    </button>
+
+    <div id="data"></div>
+  </body>
+</html>
